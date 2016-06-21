@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290B2A231D18D64400B52C4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A221D18D64400B52C4D /* main.m */; };
+		290B2A261D18D64400B52C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A251D18D64400B52C4D /* AppDelegate.m */; };
+		290B2A291D18D64400B52C4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A281D18D64400B52C4D /* ViewController.m */; };
+		290B2A2C1D18D64400B52C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290B2A2A1D18D64400B52C4D /* Main.storyboard */; };
+		290B2A2E1D18D64400B52C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B2A2D1D18D64400B52C4D /* Assets.xcassets */; };
+		290B2A311D18D64400B52C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290B2A2F1D18D64400B52C4D /* LaunchScreen.storyboard */; };
+		290B2A3C1D18D64400B52C4D /* ZXMovieBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A3B1D18D64400B52C4D /* ZXMovieBrowserTests.m */; };
+		290B2A471D18D64400B52C4D /* ZXMovieBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A461D18D64400B52C4D /* ZXMovieBrowserUITests.m */; };
+		290B2A571D18D82000B52C4D /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A561D18D82000B52C4D /* ZXMovieBrowser.m */; };
+		290B2A5A1D18D85700B52C4D /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A591D18D85700B52C4D /* ZXMovie.m */; };
+		290B2A7D1D18F66F00B52C4D /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A5D1D18F66F00B52C4D /* MKAnnotationView+WebCache.m */; };
+		290B2A7E1D18F66F00B52C4D /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A5F1D18F66F00B52C4D /* NSData+ImageContentType.m */; };
+		290B2A7F1D18F66F00B52C4D /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A611D18F66F00B52C4D /* SDImageCache.m */; };
+		290B2A801D18F66F00B52C4D /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A631D18F66F00B52C4D /* SDWebImageCompat.m */; };
+		290B2A811D18F66F00B52C4D /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A651D18F66F00B52C4D /* SDWebImageDecoder.m */; };
+		290B2A821D18F66F00B52C4D /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A671D18F66F00B52C4D /* SDWebImageDownloader.m */; };
+		290B2A831D18F66F00B52C4D /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A691D18F66F00B52C4D /* SDWebImageDownloaderOperation.m */; };
+		290B2A841D18F66F00B52C4D /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A6B1D18F66F00B52C4D /* SDWebImageManager.m */; };
+		290B2A851D18F66F00B52C4D /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A6E1D18F66F00B52C4D /* SDWebImagePrefetcher.m */; };
+		290B2A861D18F66F00B52C4D /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A701D18F66F00B52C4D /* UIButton+WebCache.m */; };
+		290B2A871D18F66F00B52C4D /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A721D18F66F00B52C4D /* UIImage+GIF.m */; };
+		290B2A881D18F66F00B52C4D /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A741D18F66F00B52C4D /* UIImage+MultiFormat.m */; };
+		290B2A891D18F66F00B52C4D /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A761D18F66F00B52C4D /* UIImage+WebP.m */; };
+		290B2A8A1D18F66F00B52C4D /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A781D18F66F00B52C4D /* UIImageView+HighlightedWebCache.m */; };
+		290B2A8B1D18F66F00B52C4D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A7A1D18F66F00B52C4D /* UIImageView+WebCache.m */; };
+		290B2A8C1D18F66F00B52C4D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2A7C1D18F66F00B52C4D /* UIView+WebCacheOperation.m */; };
+		290B2A8E1D19150600B52C4D /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 290B2A8D1D19150600B52C4D /* movies.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		290B2A381D18D64400B52C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290B2A161D18D64400B52C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290B2A1D1D18D64400B52C4D;
+			remoteInfo = ZXMovieBrowser;
+		};
+		290B2A431D18D64400B52C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290B2A161D18D64400B52C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290B2A1D1D18D64400B52C4D;
+			remoteInfo = ZXMovieBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		290B2A1E1D18D64400B52C4D /* ZXMovieBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXMovieBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290B2A221D18D64400B52C4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		290B2A241D18D64400B52C4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		290B2A251D18D64400B52C4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		290B2A271D18D64400B52C4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		290B2A281D18D64400B52C4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		290B2A2B1D18D64400B52C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		290B2A2D1D18D64400B52C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		290B2A301D18D64400B52C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		290B2A321D18D64400B52C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290B2A371D18D64400B52C4D /* ZXMovieBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXMovieBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290B2A3B1D18D64400B52C4D /* ZXMovieBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowserTests.m; sourceTree = "<group>"; };
+		290B2A3D1D18D64400B52C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290B2A421D18D64400B52C4D /* ZXMovieBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXMovieBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290B2A461D18D64400B52C4D /* ZXMovieBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowserUITests.m; sourceTree = "<group>"; };
+		290B2A481D18D64400B52C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290B2A551D18D82000B52C4D /* ZXMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovieBrowser.h; sourceTree = "<group>"; };
+		290B2A561D18D82000B52C4D /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
+		290B2A581D18D85700B52C4D /* ZXMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovie.h; sourceTree = "<group>"; };
+		290B2A591D18D85700B52C4D /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
+		290B2A5C1D18F66F00B52C4D /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		290B2A5D1D18F66F00B52C4D /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		290B2A5E1D18F66F00B52C4D /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		290B2A5F1D18F66F00B52C4D /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		290B2A601D18F66F00B52C4D /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		290B2A611D18F66F00B52C4D /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		290B2A621D18F66F00B52C4D /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		290B2A631D18F66F00B52C4D /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		290B2A641D18F66F00B52C4D /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		290B2A651D18F66F00B52C4D /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		290B2A661D18F66F00B52C4D /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		290B2A671D18F66F00B52C4D /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		290B2A681D18F66F00B52C4D /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		290B2A691D18F66F00B52C4D /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		290B2A6A1D18F66F00B52C4D /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		290B2A6B1D18F66F00B52C4D /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		290B2A6C1D18F66F00B52C4D /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		290B2A6D1D18F66F00B52C4D /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		290B2A6E1D18F66F00B52C4D /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		290B2A6F1D18F66F00B52C4D /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		290B2A701D18F66F00B52C4D /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		290B2A711D18F66F00B52C4D /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		290B2A721D18F66F00B52C4D /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		290B2A731D18F66F00B52C4D /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		290B2A741D18F66F00B52C4D /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		290B2A751D18F66F00B52C4D /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		290B2A761D18F66F00B52C4D /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		290B2A771D18F66F00B52C4D /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		290B2A781D18F66F00B52C4D /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		290B2A791D18F66F00B52C4D /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		290B2A7A1D18F66F00B52C4D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		290B2A7B1D18F66F00B52C4D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		290B2A7C1D18F66F00B52C4D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		290B2A8D1D19150600B52C4D /* movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		290B2A1B1D18D64400B52C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A341D18D64400B52C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A3F1D18D64400B52C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290B2A151D18D64400B52C4D = {
+			isa = PBXGroup;
+			children = (
+				290B2A201D18D64400B52C4D /* ZXMovieBrowser */,
+				290B2A3A1D18D64400B52C4D /* ZXMovieBrowserTests */,
+				290B2A451D18D64400B52C4D /* ZXMovieBrowserUITests */,
+				290B2A1F1D18D64400B52C4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		290B2A1F1D18D64400B52C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A1E1D18D64400B52C4D /* ZXMovieBrowser.app */,
+				290B2A371D18D64400B52C4D /* ZXMovieBrowserTests.xctest */,
+				290B2A421D18D64400B52C4D /* ZXMovieBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290B2A201D18D64400B52C4D /* ZXMovieBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A5B1D18F66F00B52C4D /* SDWebImage */,
+				290B2A541D18D7C000B52C4D /* ZXMovieBrowser */,
+				290B2A241D18D64400B52C4D /* AppDelegate.h */,
+				290B2A251D18D64400B52C4D /* AppDelegate.m */,
+				290B2A271D18D64400B52C4D /* ViewController.h */,
+				290B2A281D18D64400B52C4D /* ViewController.m */,
+				290B2A8D1D19150600B52C4D /* movies.plist */,
+				290B2A2A1D18D64400B52C4D /* Main.storyboard */,
+				290B2A2D1D18D64400B52C4D /* Assets.xcassets */,
+				290B2A2F1D18D64400B52C4D /* LaunchScreen.storyboard */,
+				290B2A321D18D64400B52C4D /* Info.plist */,
+				290B2A211D18D64400B52C4D /* Supporting Files */,
+			);
+			path = ZXMovieBrowser;
+			sourceTree = "<group>";
+		};
+		290B2A211D18D64400B52C4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A221D18D64400B52C4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		290B2A3A1D18D64400B52C4D /* ZXMovieBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A3B1D18D64400B52C4D /* ZXMovieBrowserTests.m */,
+				290B2A3D1D18D64400B52C4D /* Info.plist */,
+			);
+			path = ZXMovieBrowserTests;
+			sourceTree = "<group>";
+		};
+		290B2A451D18D64400B52C4D /* ZXMovieBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A461D18D64400B52C4D /* ZXMovieBrowserUITests.m */,
+				290B2A481D18D64400B52C4D /* Info.plist */,
+			);
+			path = ZXMovieBrowserUITests;
+			sourceTree = "<group>";
+		};
+		290B2A541D18D7C000B52C4D /* ZXMovieBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A551D18D82000B52C4D /* ZXMovieBrowser.h */,
+				290B2A561D18D82000B52C4D /* ZXMovieBrowser.m */,
+				290B2A581D18D85700B52C4D /* ZXMovie.h */,
+				290B2A591D18D85700B52C4D /* ZXMovie.m */,
+			);
+			path = ZXMovieBrowser;
+			sourceTree = "<group>";
+		};
+		290B2A5B1D18F66F00B52C4D /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				290B2A5C1D18F66F00B52C4D /* MKAnnotationView+WebCache.h */,
+				290B2A5D1D18F66F00B52C4D /* MKAnnotationView+WebCache.m */,
+				290B2A5E1D18F66F00B52C4D /* NSData+ImageContentType.h */,
+				290B2A5F1D18F66F00B52C4D /* NSData+ImageContentType.m */,
+				290B2A601D18F66F00B52C4D /* SDImageCache.h */,
+				290B2A611D18F66F00B52C4D /* SDImageCache.m */,
+				290B2A621D18F66F00B52C4D /* SDWebImageCompat.h */,
+				290B2A631D18F66F00B52C4D /* SDWebImageCompat.m */,
+				290B2A641D18F66F00B52C4D /* SDWebImageDecoder.h */,
+				290B2A651D18F66F00B52C4D /* SDWebImageDecoder.m */,
+				290B2A661D18F66F00B52C4D /* SDWebImageDownloader.h */,
+				290B2A671D18F66F00B52C4D /* SDWebImageDownloader.m */,
+				290B2A681D18F66F00B52C4D /* SDWebImageDownloaderOperation.h */,
+				290B2A691D18F66F00B52C4D /* SDWebImageDownloaderOperation.m */,
+				290B2A6A1D18F66F00B52C4D /* SDWebImageManager.h */,
+				290B2A6B1D18F66F00B52C4D /* SDWebImageManager.m */,
+				290B2A6C1D18F66F00B52C4D /* SDWebImageOperation.h */,
+				290B2A6D1D18F66F00B52C4D /* SDWebImagePrefetcher.h */,
+				290B2A6E1D18F66F00B52C4D /* SDWebImagePrefetcher.m */,
+				290B2A6F1D18F66F00B52C4D /* UIButton+WebCache.h */,
+				290B2A701D18F66F00B52C4D /* UIButton+WebCache.m */,
+				290B2A711D18F66F00B52C4D /* UIImage+GIF.h */,
+				290B2A721D18F66F00B52C4D /* UIImage+GIF.m */,
+				290B2A731D18F66F00B52C4D /* UIImage+MultiFormat.h */,
+				290B2A741D18F66F00B52C4D /* UIImage+MultiFormat.m */,
+				290B2A751D18F66F00B52C4D /* UIImage+WebP.h */,
+				290B2A761D18F66F00B52C4D /* UIImage+WebP.m */,
+				290B2A771D18F66F00B52C4D /* UIImageView+HighlightedWebCache.h */,
+				290B2A781D18F66F00B52C4D /* UIImageView+HighlightedWebCache.m */,
+				290B2A791D18F66F00B52C4D /* UIImageView+WebCache.h */,
+				290B2A7A1D18F66F00B52C4D /* UIImageView+WebCache.m */,
+				290B2A7B1D18F66F00B52C4D /* UIView+WebCacheOperation.h */,
+				290B2A7C1D18F66F00B52C4D /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		290B2A1D1D18D64400B52C4D /* ZXMovieBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290B2A4B1D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowser" */;
+			buildPhases = (
+				290B2A1A1D18D64400B52C4D /* Sources */,
+				290B2A1B1D18D64400B52C4D /* Frameworks */,
+				290B2A1C1D18D64400B52C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXMovieBrowser;
+			productName = ZXMovieBrowser;
+			productReference = 290B2A1E1D18D64400B52C4D /* ZXMovieBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		290B2A361D18D64400B52C4D /* ZXMovieBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290B2A4E1D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowserTests" */;
+			buildPhases = (
+				290B2A331D18D64400B52C4D /* Sources */,
+				290B2A341D18D64400B52C4D /* Frameworks */,
+				290B2A351D18D64400B52C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290B2A391D18D64400B52C4D /* PBXTargetDependency */,
+			);
+			name = ZXMovieBrowserTests;
+			productName = ZXMovieBrowserTests;
+			productReference = 290B2A371D18D64400B52C4D /* ZXMovieBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		290B2A411D18D64400B52C4D /* ZXMovieBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290B2A511D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowserUITests" */;
+			buildPhases = (
+				290B2A3E1D18D64400B52C4D /* Sources */,
+				290B2A3F1D18D64400B52C4D /* Frameworks */,
+				290B2A401D18D64400B52C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290B2A441D18D64400B52C4D /* PBXTargetDependency */,
+			);
+			name = ZXMovieBrowserUITests;
+			productName = ZXMovieBrowserUITests;
+			productReference = 290B2A421D18D64400B52C4D /* ZXMovieBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		290B2A161D18D64400B52C4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Shawn;
+				TargetAttributes = {
+					290B2A1D1D18D64400B52C4D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					290B2A361D18D64400B52C4D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 290B2A1D1D18D64400B52C4D;
+					};
+					290B2A411D18D64400B52C4D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 290B2A1D1D18D64400B52C4D;
+					};
+				};
+			};
+			buildConfigurationList = 290B2A191D18D64400B52C4D /* Build configuration list for PBXProject "ZXMovieBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 290B2A151D18D64400B52C4D;
+			productRefGroup = 290B2A1F1D18D64400B52C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				290B2A1D1D18D64400B52C4D /* ZXMovieBrowser */,
+				290B2A361D18D64400B52C4D /* ZXMovieBrowserTests */,
+				290B2A411D18D64400B52C4D /* ZXMovieBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		290B2A1C1D18D64400B52C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290B2A311D18D64400B52C4D /* LaunchScreen.storyboard in Resources */,
+				290B2A8E1D19150600B52C4D /* movies.plist in Resources */,
+				290B2A2E1D18D64400B52C4D /* Assets.xcassets in Resources */,
+				290B2A2C1D18D64400B52C4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A351D18D64400B52C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A401D18D64400B52C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		290B2A1A1D18D64400B52C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290B2A291D18D64400B52C4D /* ViewController.m in Sources */,
+				290B2A8A1D18F66F00B52C4D /* UIImageView+HighlightedWebCache.m in Sources */,
+				290B2A8B1D18F66F00B52C4D /* UIImageView+WebCache.m in Sources */,
+				290B2A891D18F66F00B52C4D /* UIImage+WebP.m in Sources */,
+				290B2A851D18F66F00B52C4D /* SDWebImagePrefetcher.m in Sources */,
+				290B2A571D18D82000B52C4D /* ZXMovieBrowser.m in Sources */,
+				290B2A811D18F66F00B52C4D /* SDWebImageDecoder.m in Sources */,
+				290B2A821D18F66F00B52C4D /* SDWebImageDownloader.m in Sources */,
+				290B2A5A1D18D85700B52C4D /* ZXMovie.m in Sources */,
+				290B2A841D18F66F00B52C4D /* SDWebImageManager.m in Sources */,
+				290B2A8C1D18F66F00B52C4D /* UIView+WebCacheOperation.m in Sources */,
+				290B2A861D18F66F00B52C4D /* UIButton+WebCache.m in Sources */,
+				290B2A881D18F66F00B52C4D /* UIImage+MultiFormat.m in Sources */,
+				290B2A261D18D64400B52C4D /* AppDelegate.m in Sources */,
+				290B2A831D18F66F00B52C4D /* SDWebImageDownloaderOperation.m in Sources */,
+				290B2A871D18F66F00B52C4D /* UIImage+GIF.m in Sources */,
+				290B2A801D18F66F00B52C4D /* SDWebImageCompat.m in Sources */,
+				290B2A7E1D18F66F00B52C4D /* NSData+ImageContentType.m in Sources */,
+				290B2A231D18D64400B52C4D /* main.m in Sources */,
+				290B2A7D1D18F66F00B52C4D /* MKAnnotationView+WebCache.m in Sources */,
+				290B2A7F1D18F66F00B52C4D /* SDImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A331D18D64400B52C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290B2A3C1D18D64400B52C4D /* ZXMovieBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290B2A3E1D18D64400B52C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290B2A471D18D64400B52C4D /* ZXMovieBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		290B2A391D18D64400B52C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290B2A1D1D18D64400B52C4D /* ZXMovieBrowser */;
+			targetProxy = 290B2A381D18D64400B52C4D /* PBXContainerItemProxy */;
+		};
+		290B2A441D18D64400B52C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290B2A1D1D18D64400B52C4D /* ZXMovieBrowser */;
+			targetProxy = 290B2A431D18D64400B52C4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		290B2A2A1D18D64400B52C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290B2A2B1D18D64400B52C4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		290B2A2F1D18D64400B52C4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290B2A301D18D64400B52C4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		290B2A491D18D64400B52C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		290B2A4A1D18D64400B52C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		290B2A4C1D18D64400B52C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXMovieBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		290B2A4D1D18D64400B52C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXMovieBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		290B2A4F1D18D64400B52C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXMovieBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXMovieBrowser.app/ZXMovieBrowser";
+			};
+			name = Debug;
+		};
+		290B2A501D18D64400B52C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXMovieBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXMovieBrowser.app/ZXMovieBrowser";
+			};
+			name = Release;
+		};
+		290B2A521D18D64400B52C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXMovieBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXMovieBrowser;
+			};
+			name = Debug;
+		};
+		290B2A531D18D64400B52C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXMovieBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXMovieBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXMovieBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		290B2A191D18D64400B52C4D /* Build configuration list for PBXProject "ZXMovieBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290B2A491D18D64400B52C4D /* Debug */,
+				290B2A4A1D18D64400B52C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290B2A4B1D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290B2A4C1D18D64400B52C4D /* Debug */,
+				290B2A4D1D18D64400B52C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290B2A4E1D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290B2A4F1D18D64400B52C4D /* Debug */,
+				290B2A501D18D64400B52C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290B2A511D18D64400B52C4D /* Build configuration list for PBXNativeTarget "ZXMovieBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290B2A521D18D64400B52C4D /* Debug */,
+				290B2A531D18D64400B52C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 290B2A161D18D64400B52C4D /* Project object */;
+}
