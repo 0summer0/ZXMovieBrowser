@@ -26,7 +26,6 @@
 @property (nonatomic, assign, readwrite) CGPoint        scrollViewContentOffset;
 @property (nonatomic, strong, readwrite) UIScrollView   *scrollView;
 @property (nonatomic, strong, readwrite) UIImageView    *backgroundView;
-@property (nonatomic, assign, readwrite) NSInteger      lastIndex;
 
 @end
 
