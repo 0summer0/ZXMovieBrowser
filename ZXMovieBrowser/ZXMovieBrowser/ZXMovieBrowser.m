@@ -60,6 +60,8 @@
         self.currentIndex = index;
         CGPoint point = CGPointMake((kItemSpacing + kItemWidth) * index - kScrollViewContentOffset, 0);
         [self.scrollView setContentOffset:point animated:NO];
+        
+        [self backgroundViewFadeTransition];
     }
 }
 
@@ -75,14 +77,9 @@
         [_backgroundView sd_setImageWithURL:[NSURL URLWithString:((ZXMovie *)self.movies[0]).coverUrl]];
     }
     
-    UIToolbar *blurView = [[UIToolbar alloc] initWithFrame:self.bounds];
-    blurView.barStyle = UIBarStyleBlack;
-    blurView.translucent = YES;
+    UIVisualEffectView *blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+    blurView.frame = self.bounds;
     [self addSubview:blurView];
-    CALayer *extraColorLayer = [CALayer layer];
-    extraColorLayer.frame = CGRectMake(0, 0, blurView.frame.size.width, blurView.frame.size.height);
-    extraColorLayer.backgroundColor = [UIColor colorWithWhite:1 alpha:0.4].CGColor;
-    [blurView.layer addSublayer:extraColorLayer];
     
     [self setupScrollView];
 }
@@ -247,13 +244,7 @@
     }
     
     if (self.currentIndex < self.movies.count) {
-        [self.backgroundView sd_setImageWithURL:[NSURL URLWithString:((ZXMovie *)self.movies[self.currentIndex]).coverUrl]];
-        
-        CATransition *transition = [CATransition animation];
-        transition.duration = 0.6f;
-        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        transition.type = kCATransitionFade;
-        [self.backgroundView.layer addAnimation:transition forKey:nil];
+        [self backgroundViewFadeTransition];
     }
 }
 
@@ -266,14 +257,21 @@
             [self.delegate movieBrowser:self didEndScrollingAtIndex:self.currentIndex];
         }
         
-        [self.backgroundView sd_setImageWithURL:[NSURL URLWithString:((ZXMovie *)self.movies[self.currentIndex]).coverUrl]];
-        
-        CATransition *transition = [CATransition animation];
-        transition.duration = 0.6f;
-        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        transition.type = kCATransitionFade;
-        [self.backgroundView.layer addAnimation:transition forKey:nil];
+        [self backgroundViewFadeTransition];
     }
+}
+
+#pragma mark - backgroundView
+
+- (void)backgroundViewFadeTransition
+{
+    [self.backgroundView sd_setImageWithURL:[NSURL URLWithString:((ZXMovie *)self.movies[self.currentIndex]).coverUrl]];
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.6f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    [self.backgroundView.layer addAnimation:transition forKey:nil];
 }
 
 #pragma mark - setters
