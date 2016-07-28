@@ -228,6 +228,8 @@
         self.currentIndex = index;
     }
     
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(movieBrowserDidEndScrolling) object:nil];
+    
     [self adjustSubviews:scrollView];
 }
 
@@ -239,13 +241,7 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    if ([self.delegate respondsToSelector:@selector(movieBrowser:didEndScrollingAtIndex:)]) {
-        [self.delegate movieBrowser:self didEndScrollingAtIndex: self.currentIndex];
-    }
-    
-    if (self.currentIndex < self.movies.count) {
-        [self backgroundViewFadeTransition];
-    }
+    [self performSelector:@selector(movieBrowserDidEndScrolling) withObject:nil afterDelay:0.1];
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
@@ -253,10 +249,21 @@
     if (!CGPointEqualToPoint(self.scrollViewContentOffset, self.scrollView.contentOffset)) {
         [self.scrollView setContentOffset:self.scrollViewContentOffset animated:YES];
     } else {
-        if ([self.delegate respondsToSelector:@selector(movieBrowser:didEndScrollingAtIndex:)]) {
-            [self.delegate movieBrowser:self didEndScrollingAtIndex:self.currentIndex];
-        }
-        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self movieBrowserDidEndScrolling];
+        });
+    }
+}
+
+#pragma mark - end scrolling handling
+
+- (void)movieBrowserDidEndScrolling
+{
+    if ([self.delegate respondsToSelector:@selector(movieBrowser:didEndScrollingAtIndex:)]) {
+        [self.delegate movieBrowser:self didEndScrollingAtIndex: self.currentIndex];
+    }
+    
+    if (self.currentIndex < self.movies.count) {
         [self backgroundViewFadeTransition];
     }
 }
@@ -268,7 +275,7 @@
     [self.backgroundView sd_setImageWithURL:[NSURL URLWithString:((ZXMovie *)self.movies[self.currentIndex]).coverUrl]];
     
     CATransition *transition = [CATransition animation];
-    transition.duration = 0.6f;
+    transition.duration = 0.45f;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionFade;
     [self.backgroundView.layer addAnimation:transition forKey:nil];
