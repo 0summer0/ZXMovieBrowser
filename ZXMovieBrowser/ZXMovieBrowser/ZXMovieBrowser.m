@@ -26,6 +26,7 @@
 @property (nonatomic, assign, readwrite) CGPoint        scrollViewContentOffset;
 @property (nonatomic, strong, readwrite) UIScrollView   *scrollView;
 @property (nonatomic, strong, readwrite) UIImageView    *backgroundView;
+@property (nonatomic, assign, readwrite) BOOL           isTapDetected;
 
 @end
 
@@ -214,6 +215,8 @@
     point = CGPointMake(point.x - kScrollViewContentOffset - ((kItemWidth / 2 + kItemSpacing)), 0);
     self.scrollViewContentOffset = point;
     
+    self.isTapDetected = YES;
+    
     [self.scrollView setContentOffset:point animated:YES];
 }
 
@@ -247,7 +250,10 @@
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     if (!CGPointEqualToPoint(self.scrollViewContentOffset, self.scrollView.contentOffset)) {
-        [self.scrollView setContentOffset:self.scrollViewContentOffset animated:YES];
+        if (self.isTapDetected) {
+            self.isTapDetected = NO;
+            [self.scrollView setContentOffset:self.scrollViewContentOffset animated:YES];
+        }
     } else {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self movieBrowserDidEndScrolling];
